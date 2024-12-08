@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+   <!-- Navbar -->
+   <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">My Website</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="technical.html">Technical</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="project1.html">Project 1</a></li>
+        <li><a href="project2.html">Project 2</a></li>
+        <li><a href="project3.html">Project 3</a></li>
+      </ul>
+    </div>
+  </nav>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        
+        <!-- Portfolio Items -->
+        <div class="portfolio-item">
+          <img src="/img/chess.png" alt="Project 1" class="portfolio-image">
+          <h3>Chess</h3>
+          <p>A fully interactive chess game built using HTML, CSS, and JavaScript. It features a responsive chessboard, player-vs-player mode, and logic closely replicating the original rules of chess.</p>
+          <button class="details-btn"><a href="project1.html">View Details</a></button>
+
+        </div>
+      
+        <div class="portfolio-item">
+          <img src="/img/snake.jpg" alt="Project 2" class="portfolio-image">
+          <h3>Snake</h3>
+          <p>A recreation of the classic Snake game, developed with JavaScript. The game includes a growing snake, food collection, and scoring system, mimicking the original gameplay experience.</p>
+          <button class="details-btn" onclick="openPopup('project2')">View Details</button>
+        </div>
+      
+        <div class="portfolio-item">
+          <img src="/img/netflix.png" alt="Project 3" class="portfolio-image">
+          <h3>Netflix</h3>
+          <p>A near-identical replica of Netflix's user interface created with HTML, CSS, and JavaScript. It includes a responsive layout, movie carousels, and hover effects to provide an authentic streaming platform feel.</p>
+          <button class="details-btn" onclick="openPopup('project3')">View Details</button>
+        </div>
+        
+        <!-- Popup Modal for Project Details -->
+        <div id="project1-popup" class="popup">
+          <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('project1')">&times;</span>
+            <h3>Chess Game</h3>
+            <p>A fully interactive chess game that replicates the classic board game. The project features a responsive chessboard where players can compete in a player-vs-player mode. The game enforces standard chess rules, such as piece movement, check, checkmate, and stalemate.</p>
+        <ul>
+          <li>Drag-and-drop functionality for moving pieces</li>
+          <li>Visual indicators for valid moves</li>
+          <li>Dynamic turn-based gameplay logic</li>
+        </ul>
+            <a href="https://github.com/IbrEli/Chess" target="_blank">View Live Project</a>
+          </div>
+        </div>
+      
+        <div id="project2-popup" class="popup">
+          <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('project2')">&times;</span>
+            <h3>Snake Game</h3>
+        <p>A modern recreation of the classic Snake game. Players control a snake that grows longer as it collects food while avoiding collisions with itself and the game boundaries.</p>
+        <ul>
+          <li>Dynamic grid-based movement system</li>
+          <li>Real-time collision detection</li>
+          <li>A scoring system that tracks the player's progress</li>
+        </ul>
+            <a href="https://github.com/IbrEli/Snake" target="_blank">View Live Project</a>
+          </div>
+        </div>
+      
+        <div id="project3-popup" class="popup">
+          <div class="popup-content">
+            <span class="close-btn" onclick="closePopup('project3')">&times;</span>
+            <h3>Netflix Clone</h3>
+        <p>A near-identical replica of Netflix’s user interface designed to showcase advanced front-end development skills. This project focuses on responsive web design, dynamic movie carousels, and interactive hover effects.</p>
+        <ul>
+          <li>Dynamic movie rows with horizontal scrolling</li>
+          <li>Hover effects displaying movie details</li>
+          <li>Fully responsive design for all screen sizes</li>
+        </ul>
+            <a href="https://github.com/IbrEli/Netflix" target="_blank">View Live Project</a>
+          </div>
+        </div>
+      </section>
+
+      
+      
+</html>
